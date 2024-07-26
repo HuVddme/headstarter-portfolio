@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+    font-style: italic;
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background: url('/Users/valentine/Documents/GitHub/headstarter-portfolio/Valentine Ezikeoha Headshot.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    color: #fff;
+    display: flex;
+    justify-content: right;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#hero button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+p {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: #fff;
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.resume-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
