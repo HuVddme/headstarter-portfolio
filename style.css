@@ -74,6 +74,12 @@ h2 {
     color: #fff;
 }
 
+/* Style for the About Me section */
+#about {
+    padding: 2rem 0;
+    text-align: center;
+}
+
 .about-content {
     display: flex;
     justify-content: center;
@@ -83,18 +89,20 @@ h2 {
 
 .about-text {
     flex: 1;
-    padding: 0 2rem;
+    padding: 0 2rem; /* Adjust padding as needed */
+    text-align: left; /* Align text to the left */
+    color: #fff; /* Text color */
 }
 
 .about-image {
     flex: 1;
-    text-align: center;
+    text-align: center; /* Align image to the center */
 }
 
-.about-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%; /* Optional: Makes the image round */
+.profile-image {
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: Rounded image */
 }
 
 p {
