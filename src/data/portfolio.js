@@ -8,8 +8,7 @@ export const profile = {
   resume: "/resume.pdf",
   resumeFileName: "Valentine-Ezikeoha-Resume.pdf",
   about: [
-    "I am a passionate software engineer with a deep interest in AI/ML and full-stack development, motivated by the potential of technology to drive meaningful change. I enjoy building, learning, and experimenting with new ideas that solve real-world problems and create positive impact.",
-    "Committed to growth, innovation, and service, I strive to continuously improve my technical skills while using them to uplift others. My long-term goal is to reach greater heights professionally while contributing to solutions that benefit society on a broader scale.",
+    "I'm a software engineer driven by a genuine curiosity for AI/ML and full-stack development, and by the belief that technology can be a real force for change. I love the process of building, learning, and turning fresh ideas into solutions that tackle real-world problems."
   ],
 };
 
