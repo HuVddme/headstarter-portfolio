@@ -43,14 +43,13 @@ export default function Contact() {
         >
           {socials.map((social) => {
             const Icon = iconMap[social.icon];
-            const external = social.icon !== "email";
             return (
               <a
                 key={social.id}
                 href={social.href}
                 className={styles.card}
-                target={external ? "_blank" : undefined}
-                rel={external ? "noreferrer" : undefined}
+                target="_blank"
+                rel="noreferrer"
               >
                 <span className={styles.cardIcon}>
                   {Icon && <Icon size={20} />}

@@ -17,6 +17,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const sections = navLinks
+      .filter((link) => !link.external)
       .map((link) => document.getElementById(link.id))
       .filter(Boolean);
 
@@ -52,19 +53,33 @@ export default function Navbar() {
         </a>
 
         <ul className={`${styles.links} ${open ? styles.open : ""}`}>
-          {navLinks.map((link) => (
-            <li key={link.id}>
-              <a
-                href={`#${link.id}`}
-                className={`${styles.link} ${
-                  active === link.id ? styles.active : ""
-                }`}
-                onClick={(e) => handleNav(e, link.id)}
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
+          {navLinks.map((link) =>
+            link.external ? (
+              <li key={link.id}>
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`${styles.link} ${styles.linkExternal}`}
+                  onClick={() => setOpen(false)}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ) : (
+              <li key={link.id}>
+                <a
+                  href={`#${link.id}`}
+                  className={`${styles.link} ${
+                    active === link.id ? styles.active : ""
+                  }`}
+                  onClick={(e) => handleNav(e, link.id)}
+                >
+                  {link.label}
+                </a>
+              </li>
+            )
+          )}
         </ul>
 
         <button

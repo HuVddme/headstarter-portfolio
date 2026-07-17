@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { profile, highlights } from "../data/portfolio.js";
+import { profile } from "../data/portfolio.js";
 import styles from "./About.module.css";
 
 const fadeUp = {
@@ -41,18 +41,13 @@ export default function About() {
             variants={fadeUp}
           >
             <h2 className={styles.title}>
-              Curious builder with an eye for detail.
+              Learning, growing, and contributing at scale.
             </h2>
-            <p className={styles.text}>{profile.about}</p>
-
-            <div className={styles.highlights}>
-              {highlights.map((item) => (
-                <div key={item.title} className={styles.card}>
-                  <h3 className={styles.cardTitle}>{item.title}</h3>
-                  <p className={styles.cardText}>{item.description}</p>
-                </div>
-              ))}
-            </div>
+            {profile.about.map((paragraph, index) => (
+              <p key={index} className={styles.text}>
+                {paragraph}
+              </p>
+            ))}
           </motion.div>
         </div>
       </div>

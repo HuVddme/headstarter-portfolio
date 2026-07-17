@@ -21,20 +21,19 @@ export default function Footer() {
         </span>
 
         <p className={styles.copy}>
-          &copy; {year} {profile.name}. Built with React.
+          &copy; {year} {profile.name}.
         </p>
 
         <div className={styles.socials}>
           {socials.map((social) => {
             const Icon = iconMap[social.icon];
-            const external = social.icon !== "email";
             return (
               <a
                 key={social.id}
                 href={social.href}
                 aria-label={social.label}
-                target={external ? "_blank" : undefined}
-                rel={external ? "noreferrer" : undefined}
+                target="_blank"
+                rel="noreferrer"
               >
                 {Icon && <Icon size={18} />}
               </a>

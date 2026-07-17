@@ -48,7 +48,8 @@ npm run preview
         ├── Navbar.jsx / .module.css
         ├── Hero.jsx / .module.css
         ├── About.jsx / .module.css
-        ├── Resume.jsx / .module.css
+        ├── Experience.jsx / .module.css
+        ├── Projects.jsx / .module.css
         ├── Contact.jsx / .module.css
         └── Footer.jsx / .module.css
 ```

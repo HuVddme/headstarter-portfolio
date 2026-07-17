@@ -74,8 +74,9 @@ export default function Hero() {
         </motion.div>
 
         <motion.p className={styles.tagline} variants={item}>
-          Computer Science student at {profile.location}, focused on building
-          clean, high-performance software.
+          Software engineer passionate about AI/ML and full-stack development —
+          building technology that solves real problems and drives meaningful
+          change.
         </motion.p>
 
         <motion.div className={styles.actions} variants={item}>
@@ -85,9 +86,14 @@ export default function Hero() {
           >
             Get in touch <FiArrowUpRight />
           </button>
-          <button className="btn btn--ghost" onClick={() => scrollTo("resume")}>
+          <a
+            className="btn btn--ghost"
+            href={profile.resume}
+            target="_blank"
+            rel="noreferrer"
+          >
             View resume
-          </button>
+          </a>
         </motion.div>
       </motion.div>
 
